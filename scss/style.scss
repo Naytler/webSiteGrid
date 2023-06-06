@@ -476,3 +476,63 @@ body{
     }
 
 }
+
+.contact{
+    margin-bottom: 100px;
+    &__title{
+        font-size: 24px;
+        line-height: 33px;
+        color: #070707;
+        margin-bottom: 10px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    &__form{
+        flex-basis: 600px;
+    }
+    &__text{
+        font-size: 13px;
+    }
+    &__email{
+
+    }
+}
+
+.form{
+    margin-bottom: 10px;
+    position: relative;
+    &__input{   
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 22px 70px 22px 0;
+    }
+    &__btn{
+        width: 50px;
+        height: 50px;
+        background-color: #cacad6;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #5C5C5E;
+        border-radius: 50%;
+        position: absolute;
+        right: 1px;
+        bottom: 5px;
+    }
+}
+
+.footer{
+    border-top: 1px solid #cacad6;
+    border-bottom: 1px solid #cacad6;
+    margin-bottom: 44px;
+    padding: 30px 0;
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+}
