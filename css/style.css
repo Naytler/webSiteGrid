@@ -267,6 +267,8 @@ body {
   grid-row: 1/-1;
   -ms-grid-row-align: stretch;
       align-self: stretch;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tabs__content-box h3 {
   font-weight: 400;
@@ -656,4 +658,103 @@ body {
   gap: 20px;
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+  .tabs__btn {
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+  .tabs__btn-item {
+    display: block;
+  }
+  .games__inner {
+    -ms-grid-columns: 1fr 25px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .accessories__items {
+    -ms-grid-columns: 1fr 25px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (max-width: 820px) {
+  .equipment__box {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 66px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .buy-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 568px) {
+  .equipment__box {
+    display: block;
+  }
+  .equipment__box-img {
+    width: 100%;
+  }
+  .equipment__box-text {
+    margin-bottom: 10px;
+  }
+  .top {
+    text-align: center;
+  }
+  .feature__titles {
+    display: block;
+  }
+  .tabs__content-item {
+    display: block;
+  }
+  .video {
+    width: auto;
+    height: 250px;
+    margin-top: 20px;
+  }
+  .games__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+  .accessories__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .tabs__btn {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+  .feature__text {
+    font-size: 32px;
+  }
 }
