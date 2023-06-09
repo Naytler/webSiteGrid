@@ -564,6 +564,10 @@ body{
     .equipment__box{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .contact__inner{
+        display: block;
+    }
 }
 
 @media(max-width:768px){
